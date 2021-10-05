@@ -10,7 +10,7 @@ class Movie
 {
     public $id;
     public $original_title;
-    public $original_language;
+    public $original_language  = "en";
     public $overview;
     public $vote_average;
     public $my_judment;
@@ -41,7 +41,7 @@ class Movie
 $pluto = new Movie();
 $pluto->id = "99999";
 $pluto->original_title = "Il signore degli anelli ";
-$pluto->original_language = "it";
+// $pluto->original_language = "it";
 $pluto->overview = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta maxime molestiae architecto ad dolorem cumque iste in eum rerum illo. Laboriosam dolor hic suscipit officia expedita a illo maxime necessitatibus.";
 $pluto->vote_average = 5;
 //! chiamo la funzione che verrà stampata grazie al var_dump
