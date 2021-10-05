@@ -15,7 +15,16 @@ class Movie
     public $vote_average;
     public $my_judment;
 
+    // % funzione che viene eseguita al momento dell'instanziamento 
+    public function __construct($_id, $_original_title)
 
+    {
+        $this->id = $_id;
+        $this->original_title = $_original_title;
+    }
+
+
+    //*funzioni
     public function saluta()
     {
         echo 'io sono la funzione di ' . $this->original_title . "</br>";
@@ -23,7 +32,7 @@ class Movie
     }
 
 
-    //? questa funzione restituisce un valore che va stampato ->>>>>
+    //% questa funzione restituisce un valore che va stampato ->>>>>
     // !segui il rosso _-_-_->>
     public function getMyJudment()
     {
@@ -38,9 +47,8 @@ class Movie
 
 // instance class 
 // instance 1
-$pluto = new Movie();
-$pluto->id = "99999";
-$pluto->original_title = "Il signore degli anelli ";
+$pluto = new Movie("99999", "Il signore degli anelli ");
+
 // $pluto->original_language = "it";
 $pluto->overview = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta maxime molestiae architecto ad dolorem cumque iste in eum rerum illo. Laboriosam dolor hic suscipit officia expedita a illo maxime necessitatibus.";
 $pluto->vote_average = 5;
@@ -48,9 +56,7 @@ $pluto->vote_average = 5;
 $pluto->getMyJudment();
 
 // instance 2
-$paperino = new Movie();
-$paperino->id = "11111";
-$paperino->original_title = "The Matrix";
+$paperino = new Movie("11111", "The Matrix");
 $paperino->original_language = "it";
 $paperino->overview = "Consectetur adipisicing elit. Dicta maxime molestiae architecto ad dolorem cumque iste in eum rerum illo. Laboriosam dolor hic suscipit officia expedita a 'So Lillo'.";
 $paperino->vote_average = 9;
