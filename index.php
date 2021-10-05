@@ -32,6 +32,7 @@ $paperino->original_language = "it";
 $paperino->overview = "Consectetur adipisicing elit. Dicta maxime molestiae architecto ad dolorem cumque iste in eum rerum illo. Laboriosam dolor hic suscipit officia expedita a 'So Lillo'.";
 $paperino->vote_average = "9.9";
 
-var_dump($paperino)
+var_dump($paperino);
+echo 'il nome del mio film preferito è : ' . $paperino->original_title
 
 ?>
